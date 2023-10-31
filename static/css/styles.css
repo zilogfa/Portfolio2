@@ -1,0 +1,332 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    height: 4rem;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-background);
+    color: var(--color-dark);
+    box-shadow: var(--box-shadow);
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3rem;
+    padding: 0.5rem;
+
+}
+
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.2rem;
+    grid-template-columns: 14rem auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+aside{
+    position: relative;
+}
+
+aside .aside-fixed{
+    position: fixed;
+}
+
+aside .aside-fixed .aside-sec{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 14rem;
+    height: auto;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+aside .aside-fixed .aside-sec:hover{
+    box-shadow: none;
+}
+
+
+
+aside .aside-fixed .aside-sec a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    justify-items: center;
+    gap: 1.2rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    height: 3rem;
+    color: var(--color-dark);
+    
+    border-radius: var(--border-radius-1);
+    transition: all 0.3s ease;
+}
+
+aside .aside-fixed .aside-sec a:hover{
+    color: var(--color-info-dark);
+    margin-left: 10px;
+}
+
+
+aside .aside-fixed .aside-sec a:active{
+    color: var(--color-primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    margin-top: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    max-width: 80rem;
+    height: 100vh;
+    margin-bottom: 12rem;
+}
+
+
+section .section-head{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    color: var(--color-dark);
+    text-align: center;
+}
+
+section .section-head h1{
+    font-size: 5rem;
+}
+
+
+
+
+section .full-app{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-2);
+    padding: var(--card-padding);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+
+section .full-app:hover{
+    box-shadow: none;
+}
+
+
+section .full-app .app-img img{
+    border-radius: var(--border-radius-1);
+}
+
+
+
+
+section .full-app .app-btn-sec{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+section .icon{
+    margin: 2rem 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+section .icon img{
+    width: 2rem;
+    height: 2rem;
+    transition: all 0.8s ease;
+}
+
+section .icon img:hover{
+    scale: 1.3;
+    transition: all 0.15s ease;
+}
+
+section .icon img:active{
+    scale: 3;
+    transition: all 0.1s ease;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.game-container {
+    position: relative;
+    max-width: 78rem;
+    height: 26rem;
+    background-color: var(--color-background);
+    border: 2px solid var(--color-info-dark);
+    overflow: hidden;
+    border-radius: var(--border-radius-1);
+    font-family:'Courier New', Courier, monospace;
+}
+
+.cube {
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/game/charC.gif);
+    background-size: cover;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 10px;
+    background-color: var(--color-danger);
+    height: 40px;
+    width: 40px;
+    right: 0;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--color-info-dark);
+    font-size: 18px;
+    z-index: 10; 
+}
+
+.restartGame{
+    background-color: brown;
+    scale: 1.4;
+}
+
+
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10; 
+}
+
+.restart-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.high-score {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.start-text {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: none;  /* Initially hidden */
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    aside{
+        display: none;
+    }
+
+    .container{
+        grid-template-columns: auto;
+    }
+}
