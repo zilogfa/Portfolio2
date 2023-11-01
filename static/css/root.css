@@ -123,8 +123,10 @@ button{
 button:hover{
     color: var(--color-dark);
     background-color: var(--color-white);
-    transition: all 0.15s ease;
+    transition: all 0.3s ease;
     border: solid 1px var(--color-dark);
+    box-shadow: var(--box-shadow);
+    scale: 1.05;
 }
 
 button:active{
