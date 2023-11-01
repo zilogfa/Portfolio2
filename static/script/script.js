@@ -14,7 +14,7 @@ const startText = document.querySelector('.start-text');
 
 startText.style.display = 'block';  // Show the start text initially
 
-document.addEventListener('click', () => {
+gameContainer.addEventListener('click', () => {
     if (!isJumping && startText.style.display === 'block') {
         startText.style.display = 'none';  // Hide the start text
         initializeGame();  // Start the game
@@ -114,12 +114,12 @@ function gameOver(obstacleMover) {
     
         const highScoreDisplay = document.createElement('div');
         highScoreDisplay.className = "high-score";
-        highScoreDisplay.innerText = `High Score: ${highScore}`;
+        highScoreDisplay.innerText = `GAME OVER\nHigh Score: ${highScore}`;
         centeredContent.appendChild(highScoreDisplay);
     
-        const restartButton = document.createElement('button');
-        restartButton.className = "restart-button";
-        restartButton.innerText = "Restart";
+        const restartButton = document.createElement('span');
+        restartButton.className = "material-icons-round re-start";
+        restartButton.innerText = 'replay';
         restartButton.onclick = () => location.reload();
         centeredContent.appendChild(restartButton);
     

@@ -240,11 +240,11 @@ section .icon img:active{
     position: relative;
     max-width: 78rem;
     height: 26rem;
-    background-color: var(--color-background);
+    background: linear-gradient(0deg, var(--color-background) 0%, var(--color-info-dark) 35%, var(--color-dark) 100%);
     border: 2px solid var(--color-info-dark);
     overflow: hidden;
     border-radius: var(--border-radius-1);
-    font-family:'Courier New', Courier, monospace;
+    font-family:monospace;
 }
 
 .cube {
@@ -261,6 +261,7 @@ section .icon img:active{
     position: absolute;
     bottom: 10px;
     background-color: var(--color-danger);
+    border-radius: var(--border-radius-2);
     height: 40px;
     width: 40px;
     right: 0;
@@ -301,19 +302,47 @@ section .icon img:active{
 }
 
 .high-score {
-    font-size: 24px;
+    font-size: 2.2rem;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
+.re-start{
+    font-size: 6rem;
+    color: var(--color-background);
+    transition: 0.3s;
+}
+
+.re-start:hover{
+    font-weight: bolder;
+    scale: 1.05;
+    transition: 0.3s;
+}
 
 .start-text {
-    font-size: 24px;
+    text-align: center;
+    color: var(--color-background);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     display: none;  /* Initially hidden */
+    
+}
+.start-text span{
+    font-size: 8rem;
+    transition: 0.3s;
+}
+
+.start-text span:hover{
+    color: var(--color-info-dark);
+    font-size: 9rem;
+    transition: 0.3s;
+}
+
+.start-text span:active{
+    scale: 0.9;
 }
 
 
