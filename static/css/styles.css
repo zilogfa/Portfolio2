@@ -245,36 +245,94 @@ main #intro {
     gap: 2rem;
 }
 
-#intro .about{
+
+
+
+
+
+
+
+
+
+
+#about{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    max-width: 80rem;
     min-height: 100vh;
     
 }
 
-
-
-#intro .about div{
-    transition: all 0.3s ease;
-    padding: 3rem;
+#about .about-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 2rem;
     width: 100%;
     height: auto;
-    background-color: var(--color-white);
     box-shadow: var(--box-shadow);
-    font-size: 1rem;
-    line-height: 2.6rem;
-    color: var(--color-dark);
+    background-color: var(--color-white);
+    transition: all 0.3s ease;
 }
-#intro .about div:hover{
+#about .about-sec:hover{
     box-shadow: none;
 }
 
 
-#intro .about p span{
-    font-weight: bold;
+
+#about .tab{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
 }
+
+
+#about .tab .tab-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+#about .tab .tab-title span{
+    font-size: 2rem;
+}
+
+#about .tab .tab-title h3{
+    font-size: 1.6rem;
+}
+
+#about .tab p{
+    padding-left: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -451,5 +509,9 @@ footer .footer-svg .footer-sec div a:hover{
 
     #intro .myname p{
         font-size: 1rem;
+    }
+
+    #about .tab p{
+        padding-left: 0;
     }
 }
