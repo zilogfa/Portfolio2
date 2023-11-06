@@ -177,7 +177,6 @@ main #intro {
     gap: 2.4rem;
     max-width: 80rem;
     min-height: 100vh;
-    margin-bottom: 20rem;
     margin:2rem 0;
     padding: 4rem;
 }
@@ -294,7 +293,7 @@ main #intro {
     max-width: 80rem;
     min-height: 100vh;
     margin-bottom: 20rem;
-    
+    margin-top:20rem;
 }
 
 #about .about-sec{
@@ -311,14 +310,18 @@ main #intro {
 #about .about-sec:hover{
     box-shadow: none;
 }
-
+#about .about-sec:first-child{
+    padding-top: 6rem;
+}
+#about .about-sec:last-child{
+    padding-bottom: 6rem;
+}
 
 
 #about .tab{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 1rem;
 }
 
 
@@ -492,8 +495,6 @@ section .section-head h1{
 }
 
 .mini-app img{
-    width: 100%;
-    height: auto;
     border-radius: var(--border-radius-1);
 }
 
