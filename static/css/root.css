@@ -165,3 +165,14 @@ button:active{
 
 
 
+.bg-yellow{
+    background-color: var(--color-warning);
+}
+
+.bg-green{
+    background-color: var(--color-success);
+}
+
+.bg-red{
+    background-color: var(--color-danger);
+}

@@ -43,11 +43,15 @@ header div h1 a{
     transition: all 0.3s ease;
 }
 
-header div h1 a::before{
+header div h1 a img{
+    width: 2.6rem;
+}
+
+/* header div h1 a::before{
     content: '  ';
     background-color: var(--color-warning);
     height: 1.6rem;
-}
+} */
 
 header div a:hover{
     opacity: 0.8;
@@ -189,18 +193,35 @@ main #intro {
 }
 
 #intro .myname h1{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    gap: 1rem;
     color: var(--color-dark);
     font-size: 6rem;
     font-weight: 100;
     text-shadow: var(--box-shadow);
 }
 
+#intro .myname h1 img{
+    height: 7rem;
+    color: var(--color-warning);
+}
+
 
 #intro .myname h1 span{
     font-weight: 900;
-    text-decoration: underline var(--color-warning);
+    /* text-decoration: underline var(--color-warning); */
     /* -webkit-text-stroke: 1px var(--color-danger); */
 }
+
+
+/* #intro .myname h1::before{
+    content: ' ';
+    height: 5rem;
+    background-color: var(--color-warning);
+    opacity: 0.8;
+} */
 
 #intro .myname h3{
     font-size: 2rem;
@@ -252,13 +273,13 @@ main #intro {
     transition: all 0.2s ease;
 }
 
-#intro .skill-sec i:hover{
+/* #intro .skill-sec i:hover{
     transform: scale(1.1);
 }
 
 #intro .skill-sec i:active{
     transform: scale(3);
-}
+} */
 
 
 #intro .intro-dot {
@@ -393,17 +414,28 @@ main section{
 section .section-head{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0rem;
     margin: 2rem 0;
     padding: 1rem;
     color: var(--color-dark);
     text-align: center;
 }
 
-section .section-head h1{
+.section-head h1{
     font-size: 5rem;
+    background: linear-gradient(to bottom right, var(--color-warning), var(--color-danger));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+.section-head h3{
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.section-head p{
+    font-size: 1rem;
+}
 
 
 
@@ -562,6 +594,61 @@ section .section-head h1{
 
 
 
+.ds-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ds-title h3{
+    font-size: 1.8rem;
+}
+
+
+.ds-btn-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ds-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.ds-btn div{
+    width: 0.5rem;
+    height: 2.5rem;
+}
+
+.ds-button{
+    width: 100%;
+    font-weight: bold;
+}
+
+.ds-button:hover{
+    scale: 1;
+    color: var(--color-white);
+    background-color: var(--color-dark-variant);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -580,8 +667,10 @@ footer{
     min-height: 30vh;
     color: var(--color-white);
     background-color: var(--color-dark);
+    background-size:cover;
     justify-content: center;
 }
+
 
 
 footer .footer-sec{
@@ -698,6 +787,8 @@ footer .footer-sec .footer-right{
 
 
 
+
+
 @media only screen and (max-width: 1280px) {
     aside{
         display: none;
@@ -707,8 +798,13 @@ footer .footer-sec .footer-right{
         grid-template-columns: auto;
     }
 
+    #intro .myname h1 img{
+        height: 2rem;
+        width: 2rem;
+    }
+
     #intro .myname h1{
-        font-size: 3rem;
+        font-size: 2.1rem;
     }
 
     #intro .myname h3{
@@ -722,6 +818,24 @@ footer .footer-sec .footer-right{
     #about .tab p{
         padding-left: 0;
     }
+
+    .section-head{
+        width: 90%;
+    }
+
+    .section-head h1{
+        font-size: 3rem;
+    }
+    
+    .section-head h3{
+        font-weight: lighter;
+        font-size: 1.2rem;
+    }
+    
+    .section-head p{
+        font-size: 0.9rem;
+    }
+    
 
     .full-app{
         width: 90%;
@@ -751,7 +865,7 @@ footer .footer-sec .footer-right{
     }
 
     footer .footer-sec .footer-left h3{
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     .footer-right form{
         margin-bottom: 6rem;
