@@ -405,7 +405,7 @@ main section{
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    max-width: 80rem;
+    width: 80rem;
     min-height: 100vh;
     margin-bottom: 16rem;
 }
@@ -605,34 +605,29 @@ section .section-head{
 }
 
 
-.ds-btn-sec{
+.ds-name{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.8rem;
 }
 
-.ds-btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 0.5rem;
-    align-items: center;
-}
-
-.ds-btn div{
-    width: 0.5rem;
-    height: 2.5rem;
-}
-
-.ds-button{
-    width: 100%;
+.ds-name p{
     font-weight: bold;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-1);
+    padding: 0.2rem;
+    transition: all 0.2s ease-in-out;
 }
 
-.ds-button:hover{
-    scale: 1;
+.ds-name p:hover{
     color: var(--color-white);
-    background-color: var(--color-dark-variant);
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.ds-name p::before{
+    content: '   •   ';
+    font-weight: bolder;
 }
 
 
@@ -817,6 +812,10 @@ footer .footer-sec .footer-right{
 
     #about .tab p{
         padding-left: 0;
+    }
+
+    main section{
+        width: 100%;
     }
 
     .section-head{

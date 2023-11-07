@@ -62,6 +62,7 @@
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .high-score {
@@ -74,6 +75,7 @@
     font-size: 6rem;
     color: var(--color-background);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .re-start:hover{
@@ -92,6 +94,7 @@
 
     z-index: 10;
     display: none;  /* Initially hidden */
+    cursor: pointer;
     
 }
 .start-text span{
