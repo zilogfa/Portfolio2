@@ -786,7 +786,7 @@ footer .footer-sec .footer-right{
 .footer-right form textarea{
     min-height: 10rem;
     width: 32rem;
-    padding: 0.3rem;
+    padding: 0.3rem 0.8rem;
     border-radius: var(--border-radius-1);
     color: var(--color-white);
     background-color: var(--color-dark);
@@ -801,10 +801,18 @@ footer .footer-sec .footer-right{
     font-weight: bold;
     border-radius: var(--border-radius-1);
     background-color: var(--color-info-dark);
-    border: solid 1px var(--color-info-dark);
     color: var(--color-dark);
     transition: all 0.3s ease ;
 }
+
+.footer-right form input:first-child{
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-success);
+    color: var(--color-background);
+
+}
+
+
 .footer-right form input:hover{
     background-color: var(--color-white);
     color: var(--color-dark);
