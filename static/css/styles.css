@@ -951,34 +951,12 @@ footer .footer-sec .footer-right{
     }
 
 
-    .mini-app{
-        height: auto;
-        padding: 0.8rem;
-        width: 14rem;
-        border-radius: var(--border-radius-1);
-    }
+  
 
-    
-    .mini-app-sec{
-        justify-content: center;
-        gap: 2rem;
-
-    }
-
-    .mini-app .app-title h3{
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
-    .mini-app .app-title h6{
-        font-size: 0.5rem;
-    }
-
-
+   
 
 
     .mini-app .app-icon{
-        margin: 0.5rem 0;
         gap: 0.3rem;
 
     }
@@ -987,24 +965,6 @@ footer .footer-sec .footer-right{
         width: 1.2rem;
         height: 1.2rem;
     }
-
-    .mini-app .app-text{
-        display: none;
-    }
-
-    .mini-app .app-btn{
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-
-
-
-
-
-
-
 
 
 
@@ -1038,4 +998,69 @@ footer .footer-sec .footer-right{
         width: 20rem;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .mini-app{
+        height: auto;
+        padding: 0.8rem;
+        width: 14rem;
+        border-radius: var(--border-radius-1);
+    }
+
+    
+    .mini-app-sec{
+        justify-content: center;
+        gap: 1rem;
+
+    }
+
+    .mini-app .app-title h3{
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .mini-app .app-title h6{
+        font-size: 0.5rem;
+    }
+
+
+
+
+    .mini-app .app-icon{
+        margin: 0.5rem 0;
+        gap: 0.3rem;
+
+    }
+
+    .mini-app .app-icon img{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .mini-app .app-text{
+        display: none;
+    }
+
+    .mini-app .app-btn{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
