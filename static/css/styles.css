@@ -830,15 +830,18 @@ footer .footer-sec .footer-right{
     }
 
     .container{
-        grid-template-columns: auto;
+        grid-template-columns: 96%;
     }
 
     main #intro {
+        margin-top: 6rem;
         align-items: center;
+        padding: 0;
     }
 
     #intro .myname{
         gap: 1rem;
+        padding: 0 0.5rem;
     }
 
     #intro .myname h1 img{
