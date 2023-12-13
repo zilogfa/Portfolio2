@@ -833,6 +833,10 @@ footer .footer-sec .footer-right{
         grid-template-columns: auto;
     }
 
+    main #intro {
+        padding: 0.5rem;
+    }
+
     #intro .myname h1 img{
         height: 2rem;
         width: 2rem;
@@ -854,6 +858,49 @@ footer .footer-sec .footer-right{
         width: 2.5rem;
         height: 2.5rem;
       }
+
+
+    #intro .skill-sec .big-icon{
+        gap: 1rem;
+    }
+    
+    #intro .skill-sec .big-icon i{
+        font-size: 2.4rem;
+    }
+    
+    #intro .skill-sec .small-icon{
+        gap: 0.4rem;
+    }
+    
+    
+    #intro .skill-sec .small-icon i{
+        font-size: 1.4rem;
+    }
+
+
+
+
+
+
+
+
+    #intro .intro-dot {
+        margin-top: 14rem;
+        align-items: center;
+    }
+
+    #intro .intro-dot span{
+        font-size: 16rem;
+    }
+
+
+
+
+
+
+
+
+
 
     #about .tab p{
         padding-left: 0;
@@ -885,6 +932,14 @@ footer .footer-sec .footer-right{
         width: 100%;
     }
 
+    .full-app .icon img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+
+
+
     .mini-app-sec{
         flex-direction: column;
         justify-content: center;
@@ -897,7 +952,10 @@ footer .footer-sec .footer-right{
     }
 
 
-
+    .mini-app .app-icon img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
 
 
     footer .footer-sec{
