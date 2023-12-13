@@ -534,19 +534,20 @@ section .section-head{
 
 .mini-app-sec{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
 
 
 .mini-app{
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1.2rem;
     width: 24rem;
-    min-height: 46rem;
+
     background-color: var(--color-white);
     border-radius: var(--border-radius-2);
     padding: var(--card-padding);
@@ -950,23 +951,51 @@ footer .footer-sec .footer-right{
     }
 
 
-
-
-    .mini-app-sec{
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        gap: 2rem;
-    }
     .mini-app{
-        width: 100%;
-        min-height: 54rem;
+        height: auto;
+        padding: 0.8rem;
+        width: 14rem;
+        border-radius: var(--border-radius-1);
     }
 
+    
+    .mini-app-sec{
+        justify-content: center;
+        gap: 2rem;
+
+    }
+
+    .mini-app .app-title h3{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .mini-app .app-title h6{
+        font-size: 0.5rem;
+    }
+
+
+
+
+    .mini-app .app-icon{
+        margin: 0.5rem 0;
+        gap: 0.3rem;
+
+    }
 
     .mini-app .app-icon img{
-        width: 1.4rem;
-        height: 1.4rem;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .mini-app .app-text{
+        display: none;
+    }
+
+    .mini-app .app-btn{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
 
