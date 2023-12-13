@@ -274,6 +274,7 @@ main #intro {
 #intro .skill-sec .big-icon{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     gap: 0.8rem;
 }
 
@@ -285,7 +286,7 @@ main #intro {
 #intro .skill-sec .small-icon{
     display: flex;
     flex-wrap: wrap;
-    width: 20rem;
+    width: 100%;
     gap: 0.4rem;
 }
 
@@ -1049,12 +1050,12 @@ footer .footer-sec .footer-right{
     }
     
     #intro .skill-sec .small-icon{
-        gap: 0.6rem;
+        gap: 0.5rem;
     }
     
     
     #intro .skill-sec .small-icon i{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
 
