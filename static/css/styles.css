@@ -834,7 +834,11 @@ footer .footer-sec .footer-right{
     }
 
     main #intro {
-        padding: 0.5rem;
+        align-items: center;
+    }
+
+    #intro .myname{
+        gap: 1rem;
     }
 
     #intro .myname h1 img{
@@ -847,11 +851,11 @@ footer .footer-sec .footer-right{
     }
 
     #intro .myname h3{
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     #intro .myname p{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .blob {
@@ -897,7 +901,10 @@ footer .footer-sec .footer-right{
 
 
 
-
+    #about{
+        margin-bottom: 10rem;
+        margin-top:6rem;
+    }
 
 
 
